@@ -1,14 +1,14 @@
 {
-  "name": "js-sample-app",
+  "name": "computor",
   "version": "1.0.0",
-  "description": "A learning-by-doing exploration of the JS ecosystem.",
+  "description": "Virtual punchcard-based computing.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "js-sample-app"
+    "url": "computor"
   },
   "author": "Sarah Lohmeier",
   "license": "ISC",
