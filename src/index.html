@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computor</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+  <h1>Computor</h1>
+  <div id='root'>
+    <div id='instructions'>
+      <h2>Instructions</h2>
+      <div class="instruction-set">
+        <p class="instruction">Use the punchcard below to perform basic logic gate operations.</p>
+        <p class="instruction">Unchecked = 0</p>
+        <p class="instruction">Checked = 1</p>
+      </div>
+      <div class="instruction-set">
+        <p class="instruction">The first two boxes specify the operation:</p>
+        <p class="instruction">01 will perform an AND operation.</p>
+        <p class="instruction">10 will perform an OR operation.</p>
+        <p class="instruction">11 will perform a NOT operation.</p>
+      </div>
+      <div class="instruction-set">
+        <p class="instruction">The second two boxes specify the input.</p>
+        <p class="instruction">For example, entering '0111' will perform an AND operation on 1 and 1.</p>
+      </div>
+    </div>
+      <p>Punchcard</p>
+      <div id='punchcard'>
+        <input type='checkbox' id='input-0'>
+        <input type='checkbox' id='input-1'>
+        <input type='checkbox' id='input-2'>
+        <input type='checkbox' id='input-3'>
+      </div>
+      <div>
+        <button id='compute'>Compute</button>
+      </div>
+    <div>
+      <p>Output:</p>
+      <div>
+        <input type='checkbox' id='output-0'>
+        <input type='checkbox' id='output-1'>
+      </div>
+    </div>
+  </div>
+  <script src="/js/index.js"></script>
+</body>
+</html>

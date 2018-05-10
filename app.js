@@ -6,22 +6,18 @@ var path = require('path');
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
+app.use(express.static(path.join(__dirname + '/src')));
 
 app.get('/', function(request, response) {
 	response.type('text/html');
 	response.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.get('/about', function(request, response) {
-	response.type('text/plain');
-	response.send('About Sarah');
-});
-
 // custom 404 page
 app.use(function(request, response) {
-	response.type('text/plain');
+	response.type('text/html');
 	response.status(404);
-	response.send('404 - Not Found');
+	response.sendFile(path.join(__dirname + '/404.html'));
 });
 
 // custom 500 page

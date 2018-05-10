@@ -1,22 +1,9 @@
-# JS Practice App
+# Computor
 
-#### Current status:
+Starting with Booleans and logic gates, let's see what we can compute.
 
-Following along with the book Web Development with Node and Express to create an example Node/Express app.
+#### Run
 
-#### TODO:
+`npm install`
 
-Add react, replace the plaintext responses in app.js with react-ified versions of the home, about, and 404 pages.
-
-
-#### Current tooling:
-
-* node
-
-
-#### What I'd like to add:
-
-* testing tooling: jasmine, nyc, istanbul
-* react
-* redux
-* webpack
+`npm run start`
