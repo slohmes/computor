@@ -15,14 +15,16 @@
         <p class="instruction">Checked = 1</p>
       </div>
       <div class="instruction-set">
-        <p class="instruction">The first two boxes specify the operation:</p>
+        <p class="instruction">The first two boxes (0 and 1) specify the operation:</p>
         <p class="instruction">01 will perform an AND operation.</p>
         <p class="instruction">10 will perform an OR operation.</p>
         <p class="instruction">11 will perform a NOT operation.</p>
       </div>
       <div class="instruction-set">
-        <p class="instruction">The second two boxes specify the input.</p>
+        <p class="instruction">The second two boxes (2 and 3) specify the input.</p>
         <p class="instruction">For example, entering '0111' will perform an AND operation on 1 and 1.</p>
+        <p class="instruction">The NOT operation is performed only on the input in the third box (position 2),</p>
+        <p class="instruction">and will ignore any input in the final box.</p>
       </div>
     </div>
       <p>Punchcard</p>
@@ -39,7 +41,6 @@
       <p>Output:</p>
       <div>
         <input type='checkbox' id='output-0'>
-        <input type='checkbox' id='output-1'>
       </div>
     </div>
   </div>
