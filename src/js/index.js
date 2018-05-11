@@ -11,20 +11,10 @@ const logicGates = {
 };
 
 document.getElementById('compute').onclick = () => {
+  let input = document.getElementById('input').value.split('');
 
-  // get and transform input
-  let input = [];
-  document.getElementById('punchcard').childNodes.forEach((child) => {
-    if (child.type === 'checkbox') {
-      input += child.checked ? '1' : '0';
-    }
-  });
   const opCode = input[0] + input[1];
-  console.log('opCode: ', opCode);
-  console.log('input: ', input[2], input[3]);
   const output = logicGates[opCode](booleans[input[2]], booleans[input[3]]);
-  console.log('output: ', output);
 
-  // display output
-  document.getElementById('output-0').checked = output;
+  document.getElementById('output').innerHTML = output ? '1' : '0';
 };

@@ -10,38 +10,29 @@
     <div id='instructions'>
       <h2>Instructions</h2>
       <div class="instruction-set">
-        <p class="instruction">Use the punchcard below to perform basic logic gate operations.</p>
-        <p class="instruction">Unchecked = 0</p>
-        <p class="instruction">Checked = 1</p>
+        <p class="instruction">Enter a combination of 0's and 1's below to perform basic logic gate operations.</p>
       </div>
       <div class="instruction-set">
-        <p class="instruction">The first two boxes (0 and 1) specify the operation:</p>
+        <p class="instruction">The first two characters specify the operation:</p>
         <p class="instruction">01 will perform an AND operation.</p>
         <p class="instruction">10 will perform an OR operation.</p>
         <p class="instruction">11 will perform a NOT operation.</p>
       </div>
       <div class="instruction-set">
-        <p class="instruction">The second two boxes (2 and 3) specify the input.</p>
+        <p class="instruction">The final two characters specify the input.</p>
         <p class="instruction">For example, entering '0111' will perform an AND operation on 1 and 1.</p>
-        <p class="instruction">The NOT operation is performed only on the input in the third box (position 2),</p>
-        <p class="instruction">and will ignore any input in the final box.</p>
+        <p class="instruction">The NOT operation is performed only on the third character,</p>
+        <p class="instruction">and will ignore any fourth character.</p>
       </div>
     </div>
-      <p>Punchcard</p>
-      <div id='punchcard'>
-        <input type='checkbox' id='input-0'>
-        <input type='checkbox' id='input-1'>
-        <input type='checkbox' id='input-2'>
-        <input type='checkbox' id='input-3'>
-      </div>
-      <div>
-        <button id='compute'>Compute</button>
-      </div>
+    <div>
+      <p>Input:</p>
+      <input id='input' type='text' maxlength='4'>
+      <button id='compute'>Compute</button>
+    </div>
     <div>
       <p>Output:</p>
-      <div>
-        <input type='checkbox' id='output-0'>
-      </div>
+      <p id='output'></p>
     </div>
   </div>
   <script src="/js/index.js"></script>
